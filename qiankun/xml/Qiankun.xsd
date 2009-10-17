@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.qiankun/webtools/Qiankun"
+	xmlns:c="http://www.qiankun/webtools/Qiankun">
+
+	<complexType name="记忆类型">
+		<sequence>
+			<element name="事物" type="c:事物类型"></element>
+		</sequence>
+	</complexType>
+	
+	<complexType name="图像类型">
+		<sequence>
+			<element name="横坐标" type="double"></element>
+			<element name="纵坐标" type="double"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="事物类型">
+		<complexContent>
+			<restriction base="c:记忆类型">
+				<sequence>
+					<element name="事物名" type="string" />
+					<element name="图像" type="c:图像类型" />
+					<element name="声音" type="string"></element>
+				</sequence>
+			</restriction>
+		</complexContent>
+	</complexType>
+
+	<element name="记忆" type="c:记忆类型" abstract="true"></element>
+
+	<element name="事物" type="c:事物类型" substitutionGroup="c:记忆"></element>
+
+
+	<element name="记忆">
+		<complexType>
+			<sequence>
+				<element ref="c:记忆" maxOccurs="unbounded"></element>
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>
