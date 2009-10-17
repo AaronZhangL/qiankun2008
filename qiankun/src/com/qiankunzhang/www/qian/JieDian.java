@@ -7,14 +7,14 @@ package com.qiankunzhang.www.qian;
  * @author AaronZhang
  * 
  */
-public class jiedian {
+public class JieDian {
 
 	private String qinjiedian = "";
 	private String zijiedian = "";
 	private String xkuozhan = "";
 	private String ykuozhan = "";
 
-	public jiedian() {
+	public JieDian() {
 		// 初始化成亲节点
 		this.qinjiedian = "混沌";
 		this.zijiedian = "混沌";

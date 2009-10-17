@@ -3,17 +3,17 @@
  */
 package com.qiankunzhang.www.zhuanjia;
 
-import com.qiankunzhang.www.qian.jiedian;
+import com.qiankunzhang.www.qian.JieDian;
 
 /**
  * @author AaronZhang
  *
  */
-public class zhaoa {
+public class ZhaoA {
 	
 	
-	public jiedian zhaoshenme(String yaozhaodeci){
-		jiedian jiedian_a = new jiedian();//初始化为世界之初
+	public JieDian zhaoshenme(String yaozhaodeci){
+		JieDian jiedian_a = new JieDian();//初始化为世界之初
 		if (yaozhaodeci == null) {
 			//不对啊，你得告诉我问的是什么啊？
 			//返回根节点
