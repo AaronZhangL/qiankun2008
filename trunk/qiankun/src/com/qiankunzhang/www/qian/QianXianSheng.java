@@ -3,15 +3,15 @@
  */
 package com.qiankunzhang.www.qian;
 
-import com.qiankunzhang.www.zhuanjia.jizhuta;
-import com.qiankunzhang.www.zhuanjia.zhaoa;
+import com.qiankunzhang.www.zhuanjia.JiZhuTa;
+import com.qiankunzhang.www.zhuanjia.ZhaoA;
 
 /**
  * @author AaronZhang
  * @version 0.0
  * @since 2009/09/30
  */
-public class qian {
+public class QianXianSheng {
 
 	// 取得根节点
 	public static String genjiedian = "";
@@ -30,8 +30,8 @@ public class qian {
 	public boolean jizhu(String mingci) {
 		boolean jizhumeiyou = false;
 		// 查找是否存在这个名词，去问zhaoa
-		zhaoa zhao_a = new zhaoa();
-		jizhuta jizhuta_a = new jizhuta(zhao_a.zhaoshenme(mingci), mingci);
+		ZhaoA zhao_a = new ZhaoA();
+		JiZhuTa jizhuta_a = new JiZhuTa(zhao_a.zhaoshenme(mingci), mingci);
 		return jizhumeiyou;
 	}
 
